@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>One-Stop-Weather</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+</head>
+<body class="flex-column min-100-vh">
+    <header class="hero">
+        <h1 class="app-title">One Stop Weather</h1>
+        <p>Search for your city of interest and check out it's detailed forcast
+        </p>
+    </header>
+
+    <main class="flex-row justify-space-between">
+        <div class="col-4 col-md-4">
+            <div class="card">
+                <h3 class="card-header text-uppercase">Enter a City</h3>
+                <form id="city-form" class="card-body">
+                    <label class="form-label" for="city">City</label>
+                    <input name="city" id="city" type="text" autofocus="true" class="form-input">
+                    <button type="submit" class="btn">Search for conditions</button>
+                </form>
+            </div>
+            <div class="card">
+                <div id="recent-city" class="card-body">
+                    <h3 class="card-header text-uppercase">Recent Searches</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">Recent Search 1</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-8 col-md-8">
+            <div class="card">
+                <h3 class="card-header text-uppercase">City: <span id="city-search-term"></span></h3>
+                <div id="city-forcast" class="card-body">
+                    <ul class="list-group" id="city-forcast-day">
+                        <li class="list-group-item">
+
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="card">
+                <h3 class="card-header text-uppercase">5 Day Forcast</h3>
+                <div id="city-forcast-5day" class="card-body">
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="./assets/JS/homepage.js"></script>
+</body>
+</html>
